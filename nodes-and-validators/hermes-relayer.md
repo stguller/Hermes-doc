@@ -38,7 +38,7 @@ Make hermes config directory:
 mkdir -p $HOME/.hermes
 ```
 
-Create default hermes configuration, in this example are created IBC relayer between stargaze <-> osmosis and stargaze <-> juno. 
+Create default hermes configuration, in this example are created IBC relayer between qwoyn <-> osmosis. 
 
 Dont forget to change ip address to your rpc service if its not hosted on local vps and "memo_prefix = '<Service provider> IBC service'"
 
@@ -101,39 +101,16 @@ list = [
 ]
 
 [[chains]]
-id = 'juno-1'
-rpc_addr = 'http://localhost:26657'
-grpc_addr = 'http://localhost:9090'
-websocket_addr = 'ws://localhost:26657/websocket'
-rpc_timeout = '30s'
-account_prefix = 'juno'
-key_name = 'relayer'
-store_prefix = 'ibc'
-max_tx_size = 180000
-max_gas = 2000000
-gas_price = { price = 0.0025, denom = 'ujuno' }
-gas_adjustment = 0.1
-clock_drift = '15s'
-trusting_period = '14days'
-trust_threshold = { numerator = '1', denominator = '3' }
-memo_prefix = '<Service provider> IBC service'
-[chains.packet_filter]
-policy = 'allow'
-list = [
-  ['transfer', 'channel-20']
-  ]
-
-[[chains]]
-id = 'stargaze-1'
+id = 'qwoyn-1'
 rpc_addr = 'http://localhost:26657'
 grpc_addr = 'http://localhost:9090'
 websocket_addr = 'ws://localhost:26657/websocket'
 rpc_timeout = '10s'
-account_prefix = 'stars'
+account_prefix = 'qwoyn'
 key_name = 'relayer'
 store_prefix = 'ibc'
 max_gas = 2000000
-gas_price = { price = 0.0025, denom = 'ustars' }
+gas_price = { price = 0.0025, denom = 'uqwoyn' }
 gas_adjustment = 0.1
 clock_drift = '300s'
 trusting_period = '10days'
