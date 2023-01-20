@@ -2,6 +2,14 @@
 
 In this tutorial will be provided information how easy and fast setup Hermes IBC relayer
 
+## Assumptions
+
+In this document, we assume that you are already running an Osmosis and Qwoyn mainnet node. If you don't have any of them, you can try to install Hermes IBC by finding public RPC and port. The Osmosis-Qwoyn node will be able to communicate via the Hermes node. In the document, Osmosis and Qwoyn node ports are prepared using standard communication ports.
+
+In these instructions, Hermes is installed under /srv/hermes, adjust the paths according to your setup.
+
+These instructions are based on installation on recent Ubuntu.
+
 ## Hermes Official Documentation https://hermes.informal.systems/
 
 Pre-requisites:
