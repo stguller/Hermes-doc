@@ -1,6 +1,6 @@
 # Qwoyn <> Osmosis Hermes relayer setup
 This document is intended only for setting up Hermes IBC relay and supporting the IBC channels announced by the Cosmic Horizon team. 
-It does not contain any code to create channels on Hermes IBC. 
+It does not contain any code to create channels on Hermes IBC. The channels to be supported will be added to the document once the Cosmic-Horizon team announces them. 
 
 ## Assumptions
 
