@@ -1,5 +1,6 @@
 # Manual node  setup
 This document will be reproduced for mainnet.!!!!
+
 If you want to setup full node manually follow the steps below
 
 ## Setting up vars
