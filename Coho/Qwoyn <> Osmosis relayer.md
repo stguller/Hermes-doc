@@ -33,7 +33,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 git clone https://github.com/informalsystems/ibc-rs.git hermes
 cd hermes
-git checkout v1.2.0   ### Can check latest version https://hermes.informal.systems/installation.html#install-by-downloading
+git checkout v1.2.0
 cargo build --release
 sudo cp target/release/hermes /usr/bin
 ```
